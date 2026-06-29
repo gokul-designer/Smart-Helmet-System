@@ -1,0 +1,200 @@
+# 🪖 Smart Helmet System
+
+A Smart Helmet System is an IoT-based safety solution designed to improve rider safety by ensuring helmet usage, detecting accidents, monitoring alcohol consumption, and sending emergency alerts with location information.
+
+---
+
+## 📌 Features
+
+- ✅ Helmet detection before vehicle ignition
+- 🍺 Alcohol detection using MQ-3 sensor
+- 🚨 Accident detection using vibration/accelerometer sensor
+- 📍 GPS location tracking
+- 📲 GSM-based emergency SMS alerts
+- 🔔 Buzzer alert system
+- 💡 LED status indicators
+- 🔋 Low power embedded system
+
+---
+
+## 🛠️ Components Used
+
+### Hardware
+- Arduino Uno / ESP32 / NodeMCU
+- MQ-3 Alcohol Sensor
+- Vibration Sensor / MPU6050 Accelerometer
+- GPS Module (Neo-6M)
+- GSM Module (SIM800L/SIM900A)
+- Helmet Switch Sensor
+- Relay Module
+- Buzzer
+- LEDs
+- Power Supply/Battery
+
+### Software
+- Arduino IDE
+- Embedded C/C++
+- Serial Monitor
+
+---
+
+## ⚙️ Working Principle
+
+1. Rider wears the helmet.
+2. Helmet sensor confirms proper usage.
+3. Alcohol sensor checks if the rider has consumed alcohol.
+4. If alcohol is detected above the threshold:
+   - Vehicle ignition remains OFF.
+   - Warning buzzer is activated.
+5. If no alcohol is detected:
+   - Ignition relay is enabled.
+6. During riding, the accelerometer continuously monitors sudden impacts.
+7. In case of an accident:
+   - GPS fetches the current location.
+   - GSM module sends an emergency SMS to predefined contacts.
+
+---
+
+## 📂 Project Structure
+
+```
+Smart-Helmet-System/
+│
+├── Arduino_Code/
+│   └── SmartHelmet.ino
+│
+├── Circuit_Diagram/
+│   └── Circuit.png
+│
+├── Images/
+│   ├── Prototype.jpg
+│   ├── BlockDiagram.png
+│   └── Working.jpg
+│
+├── Documentation/
+│   └── Project_Report.pdf
+│
+└── README.md
+```
+
+---
+
+## 🔌 Circuit Diagram
+
+> Add your circuit diagram here.
+
+```
+Images/Circuit.png
+```
+
+---
+
+## 🚀 Installation
+
+1. Clone this repository.
+
+```bash
+git clone https://github.com/yourusername/Smart-Helmet-System.git
+```
+
+2. Open the Arduino code in Arduino IDE.
+
+3. Install required libraries:
+   - TinyGPS++
+   - SoftwareSerial
+   - Wire
+   - Adafruit MPU6050 (if using MPU6050)
+
+4. Select the correct board and COM port.
+
+5. Upload the code to the Arduino/ESP32.
+
+---
+
+## 📱 Output
+
+- Helmet not worn → Ignition OFF
+- Alcohol detected → Ignition OFF + Buzzer ON
+- Safe condition → Vehicle starts
+- Accident detected → SMS sent with GPS coordinates
+
+Example SMS:
+
+```
+Emergency Alert!
+
+Accident Detected.
+
+Location:
+https://maps.google.com/?q=12.9716,77.5946
+
+Please reach immediately.
+```
+
+---
+
+## 📊 Future Enhancements
+
+- Mobile application integration
+- Cloud monitoring using IoT
+- Real-time accident dashboard
+- Heart rate monitoring
+- Temperature sensor
+- Fall prediction using Machine Learning
+- Camera-based helmet detection
+- Voice assistant support
+
+---
+
+## 🎯 Applications
+
+- Two-wheeler rider safety
+- Delivery services
+- College projects
+- Industrial worker safety
+- Fleet management
+
+---
+
+## 📖 Technologies Used
+
+- Embedded Systems
+- Internet of Things (IoT)
+- Arduino Programming
+- GPS Technology
+- GSM Communication
+- Sensor Networks
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push to your branch
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Your Name**
+
+GitHub: https://github.com/yourusername
+
+Email: your@email.com
+
+---
+
+## ⭐ Support
+
+If you found this project useful, don't forget to ⭐ star this repository!
